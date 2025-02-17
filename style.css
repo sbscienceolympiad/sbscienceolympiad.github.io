@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--MainColor);
+    font-family: 'Inter';
+    font-weight: 500;
+    color: white;
+}
+
+:root {
+    --MainColor: rgb(40, 40, 40);
+    --SecondaryColor: rgb(40, 40, 40);
+    --Gold: rgb(255, 185, 0);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 1% 0%;
+    background-color: var(--SecondaryColor);
+}
+
+header div {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--SecondaryColor);
+    flex: none;
+    display: flex;
+    
+}
+
+header img {
+    background-color: var(--SecondaryColor);
+    height: 4em;
+    margin-left: 35 
+}
+
+.title {
+    font-weight: 700;
+    font-size: 180%;
+    flex: none;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--SecondaryColor);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    background-color: var(--SecondaryColor);
+    display: flex;
+    text-decoration: none;
+    font-size: 150%;
+    float: right;
+    width: 50%;
+}
+
+.nav a {
+    background-color: var(--SecondaryColor);
+    margin-left: 5%;
+    /*text-decoration: none;*/
+    font-weight: 600;
+    color: white;
+    text-align: left;   
+    text-decoration: none;
+    position: relative;
+}
+
+.nav a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 6%;
+    background: white;
+    border-radius: 100px;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+.nav a:hover::before {
+    transform: scaleX(1);
+}
+
+.home {
+    text-align: center;
+    margin: 1% 0% 2% 0%;
+    font-size: 300%;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 175%;
+    font-weight: 600;
+}
+
+.homepic {
+    width: 60%;
+    
+}
+
+
+
+
+.club {
+    display: relative;
+    padding: 1% 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+
+    display: grid;
+    grid: auto / 30% 30% 30%;
+    width: 100%;
+    align-items: center;
+}
+
+.club div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.club h1 {
+    margin-bottom: 2%;
+}
+
+.footer {
+    background-color: var(--SecondaryColor);
+    display: relative;
+    padding: 1% 0%;
+
+    display: grid;
+    grid: auto / 30% 30% 30%;
+    width: 100%;
+    font-size: 105%;
+
+}
+
+.footer div {
+    background-color: var(--SecondaryColor);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    padding: auto;
+    text-align: left;
+}
+
+.footer h2 {
+    background-color: var(--SecondaryColor);
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+.footer p {
+    background-color: var(--SecondaryColor);
+}
