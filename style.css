@@ -1,15 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: var(--MainColor);
     font-family: 'Inter';
     font-weight: 500;
-    color: white;
+    color: black;
 }
 
 :root {
-    --MainColor: rgb(40, 40, 40);
-    --SecondaryColor: rgb(40, 40, 40);
+    --MainColor: rgb(255, 255, 255);
+    --SecondaryColor: rgb(0, 0, 0);
     --Gold: rgb(255, 185, 0);
 }
 
@@ -20,7 +19,7 @@ header {
     top: 0%;
     left: 0%;
     width: 100%;
-    padding: 1% 0%;
+    padding-top: 1%;
     background-color: var(--SecondaryColor);
 }
 
@@ -89,37 +88,97 @@ header img {
     transform: scaleX(1);
 }
 
+.homepage {
+    background-color: white;
+}
+
+.homepage h1 {
+    padding-top: 2%;
+    background-color: white;
+    color: black;
+}
+
 .home {
     text-align: center;
     margin: 1% 0% 2% 0%;
     font-size: 300%;
     font-weight: 600;
+    background-color: transparent;
+    
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Black with 50% opacity */
+    background-image: none !important; /* Ensures no background image */
+
 }
 
 h1 {
     font-size: 175%;
     font-weight: 600;
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: white;
+
 }
 
 .homepic {
-    width: 60%;
+    width:100%;
     
 }
 
+.about-us {
+    background-color: white;
+    display: relative;
+    padding: 1% 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
 
+    display: grid;
+    grid: auto / 45% 45%;
+    width: 100%;
+    align-items: center;   
+}
 
+.about-us img {
+    width: 100%;
+}
+
+.about-us div {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    background-color: white;
+}
+
+.about-us h1, .about-us p {
+    background-color: white;
+    color: black;
+    padding-bottom: 3%;
+}
+
+.about-us h1 {
+    font-size: 200%;
+}
+
+.about-us p {
+    font-size: 120%;
+}
 
 .club {
     display: relative;
     padding: 1% 0%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 1%;
+    margin-top: 2%;
 
     display: grid;
     grid: auto / 30% 30% 30%;
     width: 100%;
-    align-items: center;
+    align-items: center;    
 }
 
 .club div {
@@ -129,13 +188,24 @@ h1 {
     margin-bottom: 2%;
 }
 
+.club img {
+    width: 75%;
+    margin-bottom: 2%;
+}
+
 .club h1 {
     margin-bottom: 2%;
+}
+
+.club p {
+    font-size: 115%;
+    max-width: 85%;
 }
 
 .footer {
     background-color: var(--SecondaryColor);
     display: relative;
+    margin-top: 2%;
     padding: 1% 0%;
 
     display: grid;
@@ -158,8 +228,10 @@ h1 {
     background-color: var(--SecondaryColor);
     margin-bottom: 5%;
     font-weight: 600;
+    color: white;
 }
 
-.footer p {
+.footer p, .footer a {
     background-color: var(--SecondaryColor);
+    color: white;
 }
