@@ -135,15 +135,6 @@ h1 {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
-
-    display: grid;
-    grid: auto / 45% 45%;
-    width: 100%;
-    align-items: center;   
-}
-
-.about-us img {
-    width: 100%;
 }
 
 .about-us div {
@@ -205,7 +196,10 @@ h1 {
 
 .footer {
     background-color: var(--SecondaryColor);
-    display: relative;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
     margin-top: 2%;
     padding: 1% 0%;
 
@@ -235,74 +229,4 @@ h1 {
 .footer p, .footer a {
     background-color: var(--SecondaryColor);
     color: white;
-}
-
-@media screen and (max-width: 768px) {
-    /* Stack the about-us section divs on top of each other */
-    .about-us {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .about-us div {
-        width: 90%;
-        padding: 5%;
-    }
-
-    .about-us img {
-        width: 90%;
-    }
-
-    /* Stack the club section divs on top of each other */
-    .club {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .club div {
-        width: 90%;
-    }
-
-    .club img {
-        width: 80%;
-    }
-
-    /* Make the navbar more compact */
-    .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        font-size: 120%;
-    }
-
-    .nav a {
-        margin: 5px 0;
-        text-align: center;
-        font-size: 110%;
-    }
-
-    /* Adjust the header layout */
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-    }
-
-    header div {
-        width: 100%;
-        justify-content: center;
-    }
-
-    header img {
-        height: 3em;
-    }
-
-    .title {
-        font-size: 150%;
-    }
 }
