@@ -48,6 +48,7 @@ header img {
     background-color: var(--SecondaryColor);
     margin-left: auto;
     margin-right: auto;
+    color: white;
 }
 
 .nav {
@@ -93,39 +94,38 @@ header img {
 }
 
 .homepage h1 {
-    padding-top: 2%;
-    background-color: white;
-    color: black;
+    
+    color: white;
+
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .home {
     text-align: center;
-    margin: 1% 0% 2% 0%;
     font-size: 300%;
     font-weight: 600;
     background-color: transparent;
+    padding: 0.5% 1%;
     
     position: absolute;
-    top: 14%;
+    top: 16%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5) !important; /* Black with 50% opacity */
-    background-image: none !important; /* Ensures no background image */
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-image: none !important;
 
 }
 
 h1 {
     font-size: 175%;
     font-weight: 600;
-    background-color: transparent;
-    background-color: rgba(0, 0, 0, 0.5) !important;
     color: white;
 
 }
 
 .homepic {
     width:100%;
-    
 }
 
 .about-us {
@@ -195,6 +195,7 @@ h1 {
 
 .club h1 {
     margin-bottom: 2%;
+    color: black;
 }
 
 .club p {
