@@ -1,53 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SB Science Olympiad</title>
+    <title>South Brunswick Science Olympiad</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="contact-style.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <link rel="icon" type="image" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div>
-            <!-- <a href="https://github.com/sbscienceolympiad"><img src="assets/favicon.png" alt=""></a> -->
-        <a href="https://sbscienceolympiad.github.io/sbscienceolympiad/" class="title">SBSO</a>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" class="title">SBSO</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="updates.html">Updates</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-        
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="updates.html">Updates</a>
-            <a href="resources.html">Resources</a>
-            <a href="contact.html">Contact</a>
-        </nav>
     </header>
 
-    <div class="about-us">
-        <div>
-            <h1>Updates</h1>
-            <p class="aboutmsg">We will start to post updates of our recent competitions and any other important announcments here!</p>
+    <section class="about-section">
+        <div class="container updates-container">
+            <div class="updates-content">
+                <h2>Updates</h2>
+                <p>We will start to post updates of our recent competitions and any other important announcements here!</p>
+                
+                <div class="updates-coming-soon">
+                    <h3>Coming Soon</h3>
+                    <p>Check back for updates on:</p>
+                    <ul>
+                        <li>Recent competition results</li>
+                        <li>Upcoming tournaments and invitationals</li>
+                        <li>Club announcements and important dates</li>
+                        <li>Science Olympiad event changes and updates</li>
+                        <li>Team achievements and recognition</li>
+                    </ul>
+                </div>
+                
+                <!--
+                <div class="update-entry">
+                    <div class="update-date">
+                        <span class="month">FEB</span>
+                        <span class="day">28</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="update-details">
+                        <h3>Princeton University Invitational Results</h3>
+                        <p>Our team competed at the Princeton Invitational and placed 8th overall out of 30 teams! Special congratulations to our Astronomy and Forensics teams who placed 3rd in their events.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+                -->
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="footer">
-        <div>
-            <h2>Meetings</h2>
-            <p>Fridays After School<br>Room C205</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Meetings</h3>
+                <p>Fridays After School</p>
+                <p>Room C205</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="https://www.instagram.com/sbhsscioly/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.youtube.com/@sbhsscioly" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/sbhsscioly/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@sbhsscioly" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>750 Ridge Road</p>
+                <p>Monmouth Junction, NJ</p>
+                <p>sbhsscioly@gmail.com</p>
+            </div>
         </div>
-        <div>
-            <h2>Socials</h2>
-            <p><a href="https://www.instagram.com/sbhsscioly/" target="_blank">Instagram</a></p>
-            <p><a href="https://www.youtube.com/@sbhsscioly" target="_blank">Youtube</a></p>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 South Brunswick Science Olympiad.</p>
         </div>
-        <div>
-            <h2>SBSO</h2>
-            <p>750 Ridge Road<br>Monmouth Junction, NJ<br>sbhsscioly@gmail.com<br><br></p>
-        </div>
-    </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+    </script>
 </body>
 </html>
